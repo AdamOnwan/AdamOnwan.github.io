@@ -9,9 +9,12 @@ Learning to program Blog
     <h1><em>Hello World!</em></h1>
     <ul>
       <li>
-        <a href="https://github.com/AdamOnwan">Adam's Github
+        <a href="https://skilldistillery.com/">
           <img src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/4216/s200/sd-logo.jpg" />
         </a>
+      </li>
+      <li>
+        <a href="https://github.com/AdamOnwan">Adam's Github</a>
       </li>
       <li>
         <a href="home.html">Home</a>
