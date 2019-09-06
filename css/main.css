@@ -30,11 +30,5 @@
 .sticky + .content {
   padding-top: 60px;
     }
-/*This is for image centering*/
-.center {
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width: 50%;
   }
 }
