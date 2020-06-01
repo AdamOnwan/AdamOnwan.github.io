@@ -12,7 +12,7 @@ body {
     justify-self: center;
     margin-bottom: 0.1em;
   }
-  header {
+  header, header a {
     background: #571212;
     color: white;
     padding: 1em;
