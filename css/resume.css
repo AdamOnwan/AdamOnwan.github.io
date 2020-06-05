@@ -50,7 +50,6 @@ section:last-child {
 }
 .link-items {
     display: flex;
-    align-items: center;
     flex: 1;
 }
 .link-items i {
