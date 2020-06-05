@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
 body {
     margin: 0;
     display: grid;
@@ -12,11 +18,14 @@ body {
     justify-self: center;
     margin-bottom: 0.1em;
   }
-  header, header a {
+  header {
     background: #571212;
     color: white;
     padding: 1em;
     grid-area: header;
+  }
+  header a {
+    color: white;
   }
   .container {
     display: grid;
@@ -28,6 +37,8 @@ body {
     background: #571212;
     grid-area: footer;
     text-align: center;
+    font-size: .7em;
+    
   }
   footer ul {
     justify-content: center;
@@ -36,6 +47,9 @@ body {
     text-align: center;
     display: flex;
     flex-direction: row;
+  }
+  footer a {
+    color: white;
   }
   
   .fa {
@@ -73,6 +87,12 @@ body {
     }
     .container {
       text-align: center;
+    }
+    footer {
+      font-size: .4em;
+    }
+    footer ul li {
+      padding-right: 5em;
     }
   }
   
