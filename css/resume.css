@@ -63,7 +63,8 @@ section:last-child {
 }
 .job-title-container {
     display: flex;
-    justify-content: space-between;
+    padding-right: 10em;
+    
     margin-bottom: 15px;
 }
 .job:last-child > .job-title-container:last-child {
@@ -80,35 +81,6 @@ section:last-child {
 .skills-container ~ p {
     line-height: .2;
 }
-
-In the module, Use Batch Apex, Asynchronous Apex, I'm having tough time following along.
-1. It describes Batch Apex Syntax and then gives me a skeleton code that is broken. (9 Problems)
-2. It then gives me code snippets for Invoking Batch Apex Class, I have no idea where they are suppose to go, I tried fitting the code snippets into the skeleton code given prior. Code looks like this
-global class MyBatchClass implements Database.Batchable<sObject> {
-    global (Database.QueryLocator | Iterable<sObject>) start(Database.BatchableContext bc) {
-        // collect the batches of records or objects to be passed to execute
-        MyBatchClass myBatchObject = new MyBatchClass(); 
-		Id batchId = Database.executeBatch(myBatchObject);
-    }
-    global void execute(Database.BatchableContext bc, List<P> records){
-        // process each batch of records
-        Id batchId = Database.executeBatch(myBatchObject, 100);
-    }    
-    global void finish(Database.BatchableContext bc){
-        // execute any post-processing operations
-        AsyncApexJob job = [SELECT Id, Status, JobItemsProcessed, TotalJobItems, NumberOfErrors FROM AsyncApexJob WHERE ID = :batchId ];
-    }
+.job-right {
+    padding-left: 25em;
 }
-
-I get 9 problems, and 2 of them are:
-MyBatchClass 1 Class MyBatchClass must implement the method: System.Iterable Database.Batchable.start(Database.BatchableContext)
-MyBatchClass 1 Class MyBatchClass must implement the method: void Database.Batchable.execute(Database.BatchableContext, List)
-
-3. In the next Sample Batch Apex Code, when I copy and pasted it into Apex Class, UpdateContactAddresses,  it has 1 problem
-UpdateContactAddresses, Line 39, Variable does not exist: EmailUtils
-
-4. In the Testing Batch Apex code snippet, I copied and pasted into Apex Class, UpdateContactAddressesTest, it has 1 problem
-UpdateContactAddressesTest, Line 39, Dependent class is invalid and needs recompilation: Class UpdateContactAddresses: Variable does not exist: EmailUtils
-
-
-For my issues 1 and 2, I would recommend having the entire code and just have a box outline with a number by it and reference each number when discussing it, because either I put the code together wrong, or it doesn't work anymore as it did when it was written (outdated content). Its hard to follow along when I have to piece the code snippets and skeleton code together.
