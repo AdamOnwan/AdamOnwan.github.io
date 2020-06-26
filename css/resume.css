@@ -63,8 +63,7 @@ section:last-child {
 }
 .job-title-container {
     display: flex;
-    padding-right: 10em;
-    
+    justify-content: space-between;
     margin-bottom: 15px;
 }
 .job:last-child > .job-title-container:last-child {
@@ -80,7 +79,4 @@ section:last-child {
 }
 .skills-container ~ p {
     line-height: .2;
-}
-.job-right {
-    padding-left: 25em;
 }
