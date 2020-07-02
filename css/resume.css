@@ -74,7 +74,7 @@ section:last-child {
 }
 .skills-container {
     display: grid;
-    grid-template-columns: 10ch 11ch 10ch 12ch 11ch 11ch;
+    grid-template-columns: 10ch 11ch 10ch 12ch 12ch 17ch;
     grid-gap: 0px;
 }
 .skills-container ~ p {
