@@ -99,6 +99,6 @@ section:last-child {
     display: none;
 }
 section {
-    grid-template-columns: 1fr 80%;
+    grid-template-columns: auto;
 }
 }
