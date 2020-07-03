@@ -57,12 +57,14 @@ section:last-child {
 }
 .job {
     border-bottom: 1px solid lightgrey;
+    display: grid;
 }
 .job:last-child {
     border-bottom: none;
 }
 .job-title-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 6fr 1.5fr;
     justify-content: space-between;
     margin-bottom: 15px;
 }
@@ -75,8 +77,24 @@ section:last-child {
 .skills-container {
     display: grid;
     grid-template-columns: 10ch 11ch 10ch 12ch 12ch 17ch;
-    grid-gap: 0px;
 }
 .skills-container ~ p {
     line-height: .2;
+}
+.mobile {
+    display: none;
+}
+@media only screen and (max-width: 500px) {
+    .skills-container {
+    grid-template-columns: 80px 80px 120px;
+}
+.mobile {
+    visibility: visible;
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    justify-content: center;
+}
+.links {
+    display: none;
+}
 }
