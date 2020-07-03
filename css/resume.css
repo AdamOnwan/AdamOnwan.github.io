@@ -86,7 +86,7 @@ section:last-child {
 }
 @media only screen and (max-width: 500px) {
     .skills-container {
-    grid-template-columns: 80px 80px 120px;
+    grid-template-columns: 85px 85px 120px;
 }
 .mobile {
     visibility: visible;
@@ -100,5 +100,8 @@ section:last-child {
 }
 section {
     grid-template-columns: auto;
+}
+.job-title-container {
+    grid-template-columns: 5fr 1.5fr;
 }
 }
