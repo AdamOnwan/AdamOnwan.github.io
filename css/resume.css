@@ -98,4 +98,7 @@ section:last-child {
 .links {
     display: none;
 }
+section {
+    grid-template-columns: 1fr 80%;
+}
 }
